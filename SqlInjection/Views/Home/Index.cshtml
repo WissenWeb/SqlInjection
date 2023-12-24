@@ -1,0 +1,16 @@
+﻿@using SqlInjection.Controllers;
+@model Test
+
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    
+    @Html.TextBoxFor(s=>s.UserName)
+    <br />
+    @Html.TextBoxFor(s=>s.Password)
+    <br />
+    @Html.TextBoxFor(s=>s.Id)
+    <input type="submit" value="Gönder"  />
+
+
+}
